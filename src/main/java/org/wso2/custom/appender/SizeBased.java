@@ -12,6 +12,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.io.Writer;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class SizeBased  extends FileAppender {
@@ -46,6 +48,9 @@ public class SizeBased  extends FileAppender {
         }
 
         Date date = new Date();
+        Timestamp ts=new Timestamp(date.getTime());
+        SimpleDateFormat formatter = new SimpleDateFormat("ddMMYYYY-HH-mm");
+        String newDate = formatter.format(ts);
 
         LogLog.debug("maxBackupIndex=" + this.maxBackupIndex);
         boolean renameSucceeded = true;
@@ -57,16 +62,16 @@ public class SizeBased  extends FileAppender {
 
             File target;
             for(int i = this.maxBackupIndex - 1; i >= 1 && renameSucceeded; --i) {
-                file = new File(this.fileName + "." + i + "."+ date);
+                file = new File(this.fileName + "." + i + "."+ newDate);
                 if (file.exists()) {
-                    target = new File(this.fileName + '.' + (i + 1) + "."+ date);
+                    target = new File(this.fileName + '.' + (i + 1) + "."+ newDate);
                     LogLog.debug("Renaming file " + file + " to " + target);
                     renameSucceeded = file.renameTo(target);
                 }
             }
 
             if (renameSucceeded) {
-                target = new File(this.fileName + "." + 1 + "." + date);
+                target = new File(this.fileName + "." + 1 + "." + newDate);
                 this.closeFile();
                 file = new File(this.fileName);
                 LogLog.debug("Renaming file " + file + " to " + target);
