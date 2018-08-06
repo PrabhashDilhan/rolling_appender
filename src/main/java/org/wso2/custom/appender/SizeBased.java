@@ -155,7 +155,7 @@ public class SizeBased  extends FileAppender {
             }
             continue;
         }
-        return new File(this.fileName);
+        return null;
     }
 
     protected void setQWForFiles(Writer writer) {

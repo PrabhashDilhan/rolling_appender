@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba566198-4b5e-4cff-ac1a-f8e74d9cd1da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/wso2/custom/appender/SizeBased.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wso2/custom/appender/SizeBased.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="SizeBased.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/wso2/custom/appender/SizeBased.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+            <state relative-caret-position="465">
+              <caret line="32" column="12" selection-end-line="175" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1794#2093#0" expanded="true" />
@@ -272,10 +271,10 @@
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.32963988" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32948583" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26426592" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26426592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -297,14 +296,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/wso2/custom/appender/SizeBased.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="10" />
     </breakpoint-manager>
   </component>
@@ -496,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/wso2/custom/appender/SizeBased.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        <state relative-caret-position="465">
+          <caret line="32" column="12" selection-end-line="175" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1794#2093#0" expanded="true" />
